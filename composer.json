@@ -1,5 +1,5 @@
 {
-    "name": "bkuhl/simple-ups",
+    "name": "lukesnowden/simple-ups",
     "description": "Fetch rates, track packages and verify addresses via the UPS API",
     "keywords": ["ups"],
     "type": "library",
@@ -8,6 +8,11 @@
         {
             "name": "Ben Kuhl",
             "email": "benkuhl@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Pete Briers",
+            "email": "pete@purposemedia.co.uk",
             "role": "Developer"
         }
     ],

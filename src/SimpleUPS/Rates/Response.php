@@ -38,7 +38,7 @@ class Response extends \SimpleUPS\Api\Response
      */
     public function fromXml(\SimpleXMLElement $xml)
     {
-        foreach ($xml->RatedShipment as $ratedShipment) {
+        foreach ($xml->RatedShipment as $ratedShipment) { 
             $this->addShippingMethod(ShippingMethod::fromXml($ratedShipment));
         }
 

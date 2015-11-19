@@ -254,10 +254,10 @@ class UPS
      * @throws \SimpleUPS\Api\MissingParameterException
      */
     private static function _performAddressValidation(Address $address)
-    {
+    { 
         if (self::$addressValidationResponse === null || self::$addressValidationResponse->getAddress() != $address) {
-            $request = new AddressValidate\Request();
-            $request->setAddress($address);
+            $request = new AddressValidate\Request(); 
+            $request->setAddress($address); 
 
             self::$addressValidationResponse = $request->sendRequest();
         }
@@ -483,7 +483,7 @@ class UPS
             }
 
             if (defined('UPS_SHIPPER_STATEPROVINCE_CODE')) {
-                $shipperAddress->setState(UPS_SHIPPER_STATEPROVINCE_CODE);
+                $shipperAddress->setStateProvinceCode(UPS_SHIPPER_STATEPROVINCE_CODE);
             }
 
             if (defined('UPS_SHIPPER_POSTAL_CODE')) {
